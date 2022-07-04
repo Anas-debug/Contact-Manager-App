@@ -1,7 +1,7 @@
 # Components
- ## <AddPersonForm />
- ## <ContactManager />
- ## <PeopleList />
+ ## AddPersonForm
+ ## ContactManager
+ ## PeopleList
 
 # How to use
 ## blank for now
