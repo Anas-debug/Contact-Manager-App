@@ -8,9 +8,13 @@ import { useState } from 'react';
 export default function ContactManager(props){
     const [contacts, setContacts] = useState(props.data);
 
+
+    function addPerson(name){
+        setContacts([...contacts], name);
+    }
     return(
         <div>
-            <AddPersonFrom />
+            <AddPersonFrom handleSubmit ={addPerson} />
             <PeopleList data ={contacts}/>
         </div>
     );

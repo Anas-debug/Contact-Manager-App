@@ -2,7 +2,7 @@ import React from 'react';
 import { useState } from 'react';
 
 
-export default function AddPersonFrom(){
+export default function AddPersonFrom(props){
     const [person, setPerson] = useState("");
 
     function handleChange(e){
@@ -10,6 +10,8 @@ export default function AddPersonFrom(){
     }
 
     function handleSubmit(e){
+        props.handleSubmit(person);
+        setPerson('');
         e.preventDefault();
     }
 
