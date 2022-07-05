@@ -9,7 +9,7 @@ export default function AddPersonFrom(){
         setPerson(e.target.value);
     }
 
-    function handleSubmit(){
+    function handleSubmit(e){
         e.preventDefault();
     }
 
